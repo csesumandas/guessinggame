@@ -1,13 +1,13 @@
-all: guessinggame.sh readme.md
+all: guessinggame.sh README.md
 	
 
-readme.md: guessinggame.sh
-	touch readme.md
-	echo "# Title: Guessing Game" >> readme.md
-	echo "### Make: " >> readme.md
-	date >> readme.md
-	echo "### Number of lines: " >> readme.md
-	wc -l guessinggame.sh | egrep -o [0-9]+ >> readme.md
+README.md: guessinggame.sh
+	touch README.md
+	echo "# Title: Guessing Game" >> README.md
+	echo "### Make: " >> README.md
+	date >> README.md
+	echo "### Number of lines: " >> README.md
+	wc -l guessinggame.sh | egrep -o [0-9]+ >> README.md
 
 clean:
-	rm readme.md
+	rm README.md
